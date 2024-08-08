@@ -14,7 +14,7 @@ class _LoginPageState extends State<LoginPage> {
 
   final _formKey = GlobalKey<FormState>();
 
-  moveToHome(BuildContext context) async {
+  moveToHome(context) async {
     if (_formKey.currentState!.validate()) {
       onChanged = true;
       setState(() {});
@@ -67,6 +67,7 @@ class _LoginPageState extends State<LoginPage> {
                         if (value!.isEmpty) {
                           return "Username cannot be empty";
                         }
+                        return null;
                       },
                     ),
                     const SizedBox(
@@ -85,6 +86,7 @@ class _LoginPageState extends State<LoginPage> {
                         } else if (value.length < 6) {
                           return "Password length should be at least 6";
                         }
+                        return null;
                       },
                     ),
                     const SizedBox(

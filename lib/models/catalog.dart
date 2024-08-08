@@ -1,5 +1,5 @@
 class CatalogModel{
- static List<Item> Items=[];
+ static List<Item> items=[];
 }
 
 class Item{

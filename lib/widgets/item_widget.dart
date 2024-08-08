@@ -15,7 +15,7 @@ class ItemWidget extends StatelessWidget {
         trailing: Text(
           "\$${item.price}",
           textScaleFactor: 1.5,
-          style: TextStyle(color: Colors.blue,fontWeight: FontWeight.bold),
+          style: const TextStyle(color: Colors.blue,fontWeight: FontWeight.bold),
         ),
       ),
     );
